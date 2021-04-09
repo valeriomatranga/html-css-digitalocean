@@ -26,12 +26,18 @@ nav{
     align-items: center;
 }
 
-.nav-center, .nav-right{
+.nav-right{
+    justify-content: flex-end;
+    padding-right: 30px;
+}
+
+.nav-center{
     justify-content: center;
 }
 
 .logo{
     height: 30px;
+    padding: 0 30px;
 }
 
 nav a{
@@ -59,30 +65,33 @@ a>i{
 .nav-right>.btn>a:hover{
     box-shadow: inset 0px 0px 5px;
 }
+
+.menu{
+    height: 100%;
+    display: none;
+}
 /**************
  /site header 
  **************/
 
+
+
  /*************
   site main 
   *************/
-
   /* top main */
 .top-main{
     background-image: url(../../img/bg-banner-home.jpg);
-    height: 400px;
 }
 
 .container_lg>.container{
-    height: 100%;
     align-items: center;
 }
 
 .banner_left{
-    height: 100%;
     flex-direction: column;
     justify-content: center;
-    padding-right: 200px;
+    margin: 30px;
 }
 
 h1{
@@ -99,8 +108,9 @@ h1{
 }
 
 .banner_right{
-    height: 70%;
     background-color: whitesmoke;
+    padding: 20px 0;
+    margin: 30px;
     border-radius: 5px;
     align-items: center;
     justify-content: center;
@@ -169,10 +179,112 @@ form a:not(.termini){
     position: absolute;
     left: 5px;
 }
+
+@media screen and (max-width:767px){
+    .nav-center{
+        display: none;
+    }
+    .nav-right{
+        display: none;
+    }
+    .logo{
+        padding: 0 30px;
+    }
+    .menu{
+        display:flex;
+        justify-content: flex-end;
+        align-items: center;
+        padding: 0 30px;
+        color:rgba(49, 141, 253, 1);
+    }
+    .top-main{
+        width: 100%;
+    }
+    .container{
+       max-width: 100%;
+       height: 100%;
+       flex-direction: column;
+     }
+    .banner_left{
+        width: 100%;
+        padding: 20px 20px;
+        display: block;
+        margin: 0 30px;
+    }
+    h1{
+    font-size: 2.5rem;
+    line-height: 40px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    }
+    h2{
+        margin-bottom: 5px;
+    }
+    .banner_right{
+        width: 94%;
+        margin-top: 0;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:991px){
+    .nav-center{
+        display: none;
+    }
+    .nav-right{
+        display: none;
+    }
+    .logo{
+        padding: 0 30px;
+    }
+    .menu{
+        display:flex;
+        justify-content: flex-end;
+        align-items: center;
+        padding: 0 30px;
+        color:rgba(49, 141, 253, 1);
+    }
+    .top-main{
+        width: 100%;
+    }
+    .container{
+       max-width: 100%;
+       height: 100%;
+     }
+    .banner_left{
+        display: block;
+    }
+    .banner_right{
+        margin: 20px;
+    }
+
+}
 /* /top main */
 
 /* software */
 .software{
     background-color: rgba(243, 245, 249, 1);
-    height: 200px;
+}
+.software span{
+    text-transform: uppercase;
+    color:rgba(119, 131, 157, 1);
+    text-align: center;
+    margin: 30px 0;
+    display: block;
+    padding: 0 20px;
+}
+
+.sponsor{
+    text-align: center;
+}
+
+.software img{
+    margin: 0 20px;
+    width: 135px;
+    height: 85px;
+}
+
+.container>span>a{
+    text-decoration: none;
+    color:rgba(49, 141, 253, 1);
+    text-transform: none;
 }

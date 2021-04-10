@@ -282,9 +282,125 @@ form a:not(.termini){
     width: 135px;
     height: 85px;
 }
+.customers{
+    height: 50px;
+}
 
-.container>span>a{
+.container>.customers>span>a{
     text-decoration: none;
     color:rgba(49, 141, 253, 1);
     text-transform: none;
 }
+/* /software */
+
+/* content top */
+.column_top{
+    text-align: center;
+    padding: 80px 30px;
+}
+
+.column_top>h2{
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.column_top>p{
+    color: rgba(119, 131, 157, 1);
+}
+
+.column_left, .column_center, .column_right {
+    flex-direction: column;
+    padding-left:50px ;
+}
+.column_left{
+    padding: 0;
+}
+
+.centramento{
+    border-left: 2px solid rgba(119, 131, 157, 0.459);
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 50px;
+}
+
+.column_left>.centramento>a{
+    text-decoration: none;
+    margin: 10px;
+    color: rgba(119, 131, 157, 0.657);
+}
+
+.content_top img{
+    height: 40px;
+    width: 40px;
+}
+
+.content_top h4{
+    margin: 10px 0;
+    font-weight: 600;
+}
+
+.section{
+    height: 150px;
+    margin: 10px;
+    padding: 0 30px;
+}
+
+.column_center>.section>p{
+    font-size: 15px;
+    color: rgb(119, 131, 157);
+}
+
+.column_right>.section>p{
+    font-size: 15px;
+    color: rgb(119, 131, 157);
+}
+
+.column_bottom{
+    margin-bottom: 50px;
+}
+
+@media screen and (max-width: 767px) {
+    .column_center{
+        padding-left: 0;
+    }
+    .column_right{
+        padding-left: 0;
+    }
+    .centramento{
+        margin: 20px 10px;
+    }
+    .section{
+        height: auto;
+        padding: 0;
+    }
+    .column_top{
+        padding: 30px 5px;
+    }
+    .column_bottom{
+        display: block;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:991px) {
+    .column_left{
+        padding-left: 50px;
+    }
+    .column_center{
+        padding-left: 0;
+    }
+    .column_right{
+        padding-left: 0;
+    }
+    .centramento{
+        margin: 20px 10px;
+    }
+    .section{
+        height: 200px;
+        width: 250px;
+    }
+    .column_top{
+        padding: 30px 5px;
+    }
+    
+}
+/* /content top */

@@ -598,7 +598,12 @@ form a:not(.termini){
     margin-bottom: 10px;
 }
 
-.features a, i{
+.support>i{
+    text-decoration: none;
+    color: rgba(49, 141, 253, 1);
+    font-weight: 700;
+}
+.support{
     text-decoration: none;
     color: rgba(49, 141, 253, 1);
     font-weight: 700;
@@ -687,3 +692,59 @@ form a:not(.termini){
     }
 }
 /************** / service **************/
+
+
+
+
+
+
+/**************** development ************/
+.development{
+    background-color: rgba(243, 245, 249, 1);
+}
+.dev-top{
+    text-align: center;
+    color:  rgba(3, 28, 78, 1);
+    font-size: 1.7rem;
+    padding: 40px 0;
+    margin: 50px;
+}
+
+.rock>i{
+    margin: 50px 0px 80px 0px;
+}
+/******************* /development ************/
+
+
+
+
+
+/***************** crea account *************/
+.started{
+    background-color: rgba(0, 52, 176, 1);
+}
+.account{
+    margin: 40px 0;
+}
+.account>h2{
+    color: white;
+    font-weight: 600;
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 20px;
+}
+.btn-solid{
+    background-color: white;
+    border: 1px solid lightgray;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin: 0px 20px 50px;
+    text-align: center;
+
+}
+.btn-solid>a{
+    text-decoration: none;
+    color:rgba(49, 141, 253, 1) ;
+}
+/************* /crea account  ************/
+

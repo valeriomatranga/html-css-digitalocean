@@ -748,3 +748,154 @@ form a:not(.termini){
 }
 /************* /crea account  ************/
 
+/************
+/main
+*********** */
+
+
+
+/**********
+footer
+**********  */
+
+.footer{
+    background-color:rgba(3, 28, 78, 1) ;
+}
+.made{
+    color: grey;
+    padding-right: 15px;
+}
+.made>img{
+    display: block;
+    margin-bottom: 10px;
+}
+
+.made>span{
+    display: block;
+}
+
+.footer i:not(.far){
+    padding: 5px;
+}
+
+[class*="section-"]{
+    flex-direction: column;
+    padding-left: 40px;
+}
+.footer>.container{
+    padding: 50px 0;
+}
+
+footer h4{
+    color: white;
+    padding: 10px 0;
+}
+
+footer a{
+    text-decoration: none;
+    color: gray;
+    line-height: 30px;
+}
+
+@media screen and (max-width:767px) {
+    [class*="section-"]{
+    padding-left: 10px;
+    padding-top: 20px;
+}
+    .made{
+        padding-left: 10px;
+    }  
+}
+
+@media screen and (min-width:768px) and (max-width:991px) {
+    [class*="section-"]{
+        padding: 10px 10px;
+    }
+    .made{
+        padding-left: 10px;
+    }     
+}
+/*************
+/footer
+***********  */
+
+
+
+/**************** assistente ***************/
+.assistenza{
+    width: 400px;
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+
+}
+.vignetta{
+    background-color: white;
+    color:rgba(3, 28, 78, 1);
+    font-weight: 600;
+    padding: 10px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    position: relative;
+}
+.shark{
+    width: 60px;
+    height: 60px;
+    background-color:rgba(0, 74, 255, 1) ;
+    border-radius: 5px;
+    margin-left: 20px;
+    position: relative;
+}
+
+.shark>img{
+    width: 100%;
+    margin: 5px 0;
+}
+
+.message{
+    background-color: white;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -15px;
+    right: -10px;
+
+}
+.message>.red{
+    background-color: red;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.triangle{
+    width: 15px;
+    height: 15px;
+    transform: rotate(45deg);
+    border-top: 1px solid gray;
+    border-right: 1px solid gray;
+    background-color: white;
+    position: absolute;
+    right: -8px;
+    bottom: 10px;
+}
+
+@media screen and (max-width:767px) {
+    .assistenza{
+        flex-direction: row-reverse;
+        flex-direction: column-reverse;
+        position: fixed;
+        left: 30px;
+        bottom: 30px;
+    }  
+    .vignetta{
+        margin: 20px;
+    }  
+}
+/************ /assistente ***********/

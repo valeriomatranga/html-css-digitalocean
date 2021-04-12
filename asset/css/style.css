@@ -98,6 +98,7 @@ a>i{
   /*********** top main **************/
 .top-main{
     background-image: url(../../img/bg-banner-home.jpg);
+    background-size: cover;
 }
 
 .container_lg>.container{
@@ -156,12 +157,12 @@ form>.btn_solid{
     padding: 5px;
     border-radius: 5px;
     font-size: .9rem;
-}
-
-form>.btn_solid>a{
     color: whitesmoke;
+    width: 100%;
+    margin: 5px 0;
+    cursor: pointer;
+    border: none;
 }
-
 
 form>.btn{
     box-shadow: 2px 2px 2px rgba(128, 128, 128, 0.329);
@@ -324,6 +325,9 @@ form a:not(.termini){
     color:rgba(49, 141, 253, 1);
     text-transform: none;
 }
+.customers a:hover{
+    border-bottom: 1px solid rgba(49, 141, 253, 1);
+}
 /**************** /software ******************/
 
 
@@ -398,6 +402,15 @@ form a:not(.termini){
 
 .column_bottom{
     margin-bottom: 50px;
+}
+
+.content_top a:hover{
+    color:rgba(49, 141, 253, 1);
+}
+
+.centramento:hover{
+    border-left: 2px solid rgba(49, 141, 253, 1) ;
+
 }
 
 @media screen and (max-width: 767px) {
@@ -608,6 +621,9 @@ form a:not(.termini){
     color: rgba(49, 141, 253, 1);
     font-weight: 700;
 }
+.features a:hover{
+    font-size: 1.1rem;
+}
 
 @media screen and (max-width:767px) {
     .features>.container>.colum-bottom> .column_left, .column_center, .column_right{
@@ -674,6 +690,10 @@ form a:not(.termini){
     padding: 0px 20px;
 }
 
+.bottom-service a:hover{
+    color: whitesmoke;
+}
+
 @media screen and (max-width:767px) {
     .last-table{
         padding-bottom: 80px;
@@ -709,9 +729,18 @@ form a:not(.termini){
     padding: 40px 0;
     margin: 50px;
 }
+.dev-bottom{
+    justify-content: center;
+}
+.rock>img{
+    width: 100%;
+}
 
 .rock>i{
     margin: 50px 0px 80px 0px;
+    color: rgba(49, 141, 253, 1);
+    text-align: center;
+
 }
 /******************* /development ************/
 
@@ -736,15 +765,16 @@ form a:not(.termini){
 .btn-solid{
     background-color: white;
     border: 1px solid lightgray;
-    padding: 10px 15px;
     border-radius: 5px;
     margin: 0px 20px 50px;
-    text-align: center;
-
-}
-.btn-solid>a{
-    text-decoration: none;
+    text-align: center; 
+    padding: 10px 15px;
     color:rgba(49, 141, 253, 1) ;
+}
+.btn-solid:hover{
+    background-color: rgba(49, 141, 253, 1);
+    color: white;
+    cursor: pointer;
 }
 /************* /crea account  ************/
 
@@ -760,6 +790,9 @@ footer
 
 .footer{
     background-color:rgba(3, 28, 78, 1) ;
+}
+.footer>.container{
+    width: 1170px;
 }
 .made{
     color: grey;
@@ -795,6 +828,12 @@ footer a{
     text-decoration: none;
     color: gray;
     line-height: 30px;
+}
+
+footer a:hover{
+    color: rgba(49, 141, 253, 1);
+    transition: linear cubic-bezier(0.39, 0, 0.19, 1.52);
+    transition-duration: 0.4s;
 }
 
 @media screen and (max-width:767px) {
@@ -857,6 +896,7 @@ footer a{
     border-radius: 50%;
     width: 30px;
     height: 30px;
+    border: 1px solid gray;
     justify-content: center;
     align-items: center;
     position: absolute;
@@ -897,5 +937,12 @@ footer a{
     .vignetta{
         margin: 20px;
     }  
+    .triangle{
+        transform: rotate(315deg);
+        position: absolute;
+        top: -8px;
+        left: 20px;
+    
+    }
 }
 /************ /assistente ***********/

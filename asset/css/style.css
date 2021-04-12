@@ -6,6 +6,14 @@
 /****************
  site header 
  ****************/
+header{
+    background-color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    border-bottom: 1px solid lightgray;
+}
+
 header>.container{
     height: 50px;
 }
@@ -40,10 +48,12 @@ nav{
     padding: 0 30px;
 }
 
-nav a{
+.ab{
     text-decoration: none;
     color: rgba(3, 28, 78, 1);
     margin: 0 10px;
+    height: 50px;
+    align-items: center;
 }
 
 nav a:hover{
@@ -51,7 +61,7 @@ nav a:hover{
 }
 
 a>i{
-    vertical-align: middle;
+    padding: 5px;
 }
 
 .nav-right>.btn>a{
@@ -73,13 +83,13 @@ a>i{
 
 .dropdown{
     position: relative;
-    display: inline-block;
 }
 
 .drop-content{
     display: none;
     position: absolute;
-    top: 34px;
+    top: 50px;
+    box-shadow: 0px 4px 10px -2px gray;
     background-color: rgba(255, 255, 255, 1);
     border-top: 2px solid lightgray;
     width: 400px;
@@ -134,11 +144,15 @@ a>i{
 
 
 
- /*************
+/*************
   site main 
   *************/
 
-  /*********** top main **************/
+/*********** top main **************/
+main{
+    margin-top: 50px;
+}
+
 .top-main{
     background-image: url(../../img/bg-banner-home.jpg);
     background-size: cover;
@@ -974,7 +988,7 @@ footer a:hover{
         flex-direction: row-reverse;
         flex-direction: column-reverse;
         position: fixed;
-        left: 100px;
+        right: 30px;
         bottom: 20px;
     }  
     .vignetta{

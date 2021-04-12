@@ -70,6 +70,49 @@ a>i{
     height: 100%;
     display: none;
 }
+
+.dropdown{
+    position: relative;
+    display: inline-block;
+}
+
+.drop-content{
+    display: none;
+    position: absolute;
+    top: 34px;
+    background-color: rgba(255, 255, 255, 1);
+    border-top: 2px solid lightgray;
+    width: 400px;
+}
+
+.dropdown:hover .drop-content{
+    display: block;
+}
+
+.item{
+    margin: 15px 5px;
+    align-items: center;
+}
+
+.item img{
+    width: 50px;
+    height: 50px;
+}
+
+.item span{
+    color: gray;
+    font-weight: 400;
+}
+
+.item h4{
+    color: rgba(3, 28, 78, 1);
+}
+
+.featured h5{
+    margin: 30px 0px 20px 30px;
+    color: rgba(3, 28, 78, 1);
+
+}
 /**************
  /site header 
  **************/
@@ -931,8 +974,8 @@ footer a:hover{
         flex-direction: row-reverse;
         flex-direction: column-reverse;
         position: fixed;
-        left: 30px;
-        bottom: 30px;
+        left: 100px;
+        bottom: 20px;
     }  
     .vignetta{
         margin: 20px;
